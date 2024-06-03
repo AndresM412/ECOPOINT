@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trueque - Ecopoint</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="nav__logo">
+        <h2 class="nav__tittle">Ecopoint</h2>
+      </div>
+      <ul class="nav__link nav__link--menu">
+        <li class="nav__item">
+          <a href="./ecopoint.html" class="nav__links">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="./trueque.html" class="nav__links"> Trueque</a>
+        </li>
+        <li class="nav__item">
+          <a href="https://www.manosverdes.co/reciclaje-electronico-que-es-y-beneficios/" class="nav__links"> Educacion y aprendizaje </a>
+        </li>
+        <li class="nav__item">
+          <a href="https://www.fundacionpuntosverdes.com/puntos-de-recoleccion/" class="nav__links"> Puntos de Recolección</a>
+        </li>
+        <li class="nav__item">
+          <a href="https://www.minambiente.gov.co/asuntos-ambientales-sectorial-y-urbana/residuos-de-aparato-electricos-y-electronicos-raee/" class="nav__links"> Leyes </a>
+        </li>
+        <img src="img/close.svg" class="nav__close">
+      </ul>
+      <div class="nav__menu">
+        <img src="img/menu.svg" class="nav__menu">
+      </div>
+    </nav>
+    <section class="hero__container container">
+      <h1 class="hero__title">Este espacio está diseñado para que realices tus trueques.</h1>
+      <p class="hero__paragraph">Cambia esas cosas que no utilices con otras personas o por dinero, tú decides.</p>
+    </section>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Trueques</h1>
+      <h2>Sube tu producto para trueque</h2>
+      <form id="productForm">
+          <label for="name">Nombre:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+  
+          <label for="telefono">Teléfono:</label><br>
+          <input type="text" id="telefono" name="telefono" required><br><br>
+  
+          <label for="correo">Correo:</label><br>
+          <input type="email" id="correo" name="correo" required><br><br>
+  
+          <label for="producto">Tipo de oferta para el producto:</label><br>
+          <input type="text" id="producto" name="producto" required><br><br>
+  
+          <label for="address">Dirección:</label><br>
+          <input type="text" id="address" name="address" required><br><br>
+  
+          <label for="product">Producto:</label><br>
+          <input type="text" id="product" name="product" required><br><br>
+  
+          <label for="image">Imagen del producto:</label><br>
+          <input type="file" id="image" name="image" accept="image/*" required><br><br>
+  
+          <button type="submit">Subir Producto</button>
+      </form>
+        <h2>Productos Disponibles para Trueque</h2>
+        <div id="productList">
+            <!-- Los productos serán listados aquí -->
+        </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <section class="footer__container container">
+      <nav class="nav nav--footer">
+        <h2 class="footer__title">Ecopoint.</h2>
+        <ul class="nav__link nav__link--footer">
+          <li class="nav__items">
+            <a href="/ecopoint.html" class="nav__links">Inicio</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="nav__links"> Trueque </a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="nav__links">Educación y aprendizaje</a>
+          </li>
+          <li class="nav__items">
+            <a href="https://www.fundacionpuntosverdes.com/puntos-de-recoleccion/" class="nav__links">Punto de recolección</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="nav__links">Leyes</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+        <h2 class="footer__newsletter">Suscríbete a la newsletter</h2>
+        <div class="footer__inputs">
+          <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+          <input type="submit" value="Regístrate" class="footer__submit">
+        </div>
+      </form>
+    </section>
+    <section class="footer__copy container">
+      <div class="footer__social">
+        <a href="https://www.facebook.com/?locale=es_LA" class="footer__icons"><img src="./img/facebook.svg" class="footer__img"></a>
+        <a href="#" class="footer__icons"><img src="" class="footer__img"></a>
+        <a href="https://www.youtube.com/watch?v=lVMF9YSaKYs" class="footer__icons"><img src="./img/youtube.svg" class="footer__img"></a>
+      </div>
+      <h3 class="footer__copyright">Derechos reservados &copy; Ecopoint</h3>
+    </section>
+  </footer>
+  <script src="js/indexeddb.js"></script>
+</body>
+</html>
